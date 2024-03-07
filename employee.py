@@ -14,6 +14,10 @@ class Employee:
         role (str): The role of the employee.
         salary (float): The salary of the employee.
     """
+    str name
+    str emp_id
+    str role
+    float salary
 
     def __init__(self, name, emp_id, role, salary):
         """
