@@ -19,11 +19,18 @@ class ManagementSystem:
         projects (list): List of projects in the system.
         tasks (list): List of tasks in the system.
     """
+    str employees = []
+    str projects = []
+    str tasks = []
 
     def __init__(self):
         """
         Initialize a ManagementSystem object.
         """
+        self.employees = []
+        self.projects = []
+        self.tasks = []
+
         pass
 
     def add_employee(self, employee):
@@ -33,6 +40,7 @@ class ManagementSystem:
         Args:
             employee (Employee): The employee to be added.
         """
+            self.employees.append(employee)
         pass
 
     def remove_employee(self, emp_id):
@@ -42,6 +50,10 @@ class ManagementSystem:
         Args:
             emp_id (str): The ID of the employee to be removed.
         """
+        for i in ramge(len(employees)):
+            if emp_id == employees[i]
+                employees[i].emp_id = ''
+         
         pass
 
     def add_project(self, project):
@@ -51,6 +63,8 @@ class ManagementSystem:
         Args:
             project (Project): The project to be added.
         """
+        self.projects.append(project)
+
         pass
 
     def add_task(self, task):
@@ -60,6 +74,7 @@ class ManagementSystem:
         Args:
             task (Task): The task to be added.
         """
+        self.tasks.append(task)
         pass
 
     def assign_employee_to_project(self, emp_id, project_id):
@@ -73,4 +88,10 @@ class ManagementSystem:
         Raises:
             ValueError: If employee or project is not found.
         """
+        for i in range(len(employees)):
+            if emp_id != employees[i]
+                raise print("ValueError: If employee or project is not found.")
+            else:
+                
+
         pass
