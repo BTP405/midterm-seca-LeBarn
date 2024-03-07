@@ -16,12 +16,12 @@ class Project:
         end_date (str): The end date of the project.
         employees (list): List of employees associated with the project.
     """
-    str p_project_id
-    str p_name
-    str p_description
-    str p_start_date
-    str p_end_date
-    str p_employees = []
+    str project_id
+    str name
+    str description
+    str start_date
+    str end_date
+    str employees = []
 
 
     def __init__(self, project_id, name, description, start_date, end_date):
@@ -35,11 +35,11 @@ class Project:
             start_date (str): The start date of the project.
             end_date (str): The end date of the project.
         """
-        self.p_project_id = project_id
-        self.p_name = name
-        self.p_description = description
-        self.p_start_date = start_date
-        self.p_end_date = end_date
+        self.project_id = project_id
+        self.name = name
+        self.description = description
+        self.start_date = start_date
+        self.end_date = end_date
         pass
 
     def assign_employee(self, employee):
@@ -49,6 +49,6 @@ class Project:
         Args:
             employee (Employee): The employee to be assigned to the project.
         """
-        self.p_employees.append(employee)
-        
+        self.employees.append(employee)
+
         pass

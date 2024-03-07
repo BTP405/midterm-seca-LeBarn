@@ -92,6 +92,5 @@ class ManagementSystem:
             if emp_id != employees[i]
                 raise print("ValueError: If employee or project is not found.")
             else:
-                
-
+                employees[i].emp_id = emp_id
         pass
