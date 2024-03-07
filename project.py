@@ -16,12 +16,12 @@ class Project:
         end_date (str): The end date of the project.
         employees (list): List of employees associated with the project.
     """
-    str project_id
-    str name
-    str description
-    str start_date
-    str end_date
-    str employees = []
+    project_id: str
+    name: str
+    description: str
+    start_date: str
+    end_date: str
+    employees[]: str
 
 
     def __init__(self, project_id, name, description, start_date, end_date):
