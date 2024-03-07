@@ -19,9 +19,9 @@ class ManagementSystem:
         projects (list): List of projects in the system.
         tasks (list): List of tasks in the system.
     """
-    str employees = []
-    str projects = []
-    str tasks = []
+    employees = []
+    projects = []
+    tasks = []
 
     def __init__(self):
         """
