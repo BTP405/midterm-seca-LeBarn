@@ -21,7 +21,7 @@ class Project:
     description: str
     start_date: str
     end_date: str
-    employees[]: str
+    employees = []
 
 
     def __init__(self, project_id, name, description, start_date, end_date):
